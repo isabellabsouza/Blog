@@ -3,63 +3,53 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
+    public function __construct(private PostRepository $repository){}
+
     public function index()
     {
-        //
+        $posts = $this->repository->findAll();
+        return view('posts.index')->with('posts', $posts);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $this->repository->store($request);
+        return to_route('posts.index');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Post $post)
+    public function show($id)
     {
-        //
+        $post = $this->repository->findById($id);
+        return view('posts.show')->with('post', $post);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        //
+        $post = $this->repository->findById($id);
+        return view('posts.create')->with('post', $post);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $id)
     {
-        //
+        $this->repository->update($request, $id);
+        return to_route('posts.index');
+
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        //
+        $this->repository->destroy($id);
+        return to_route('posts.index');
     }
 }

@@ -1,0 +1,37 @@
+- Tailwind
+
+{ 'orange_peel': { DEFAULT: '#FFAC4D', 100: '#422300', 200: '#854700', 300: '#c76a00', 400: '#ff8d0a', 500: '#ffac4d', 600: '#ffbc70', 700: '#ffcd94', 800: '#ffdeb8', 900: '#ffeedb' }, 'orange_peel': { DEFAULT: '#FE9903', 100: '#331f00', 200: '#653d01', 300: '#985c01', 400: '#cb7a01', 500: '#fe9903', 600: '#fead34', 700: '#fec267', 800: '#fed69a', 900: '#ffebcc' }, 'atomic_tangerine': { DEFAULT: '#FF9160', 100: '#461500', 200: '#8d2a00', 300: '#d33f00', 400: '#ff5f1b', 500: '#ff9160', 600: '#ffa681', 700: '#ffbda0', 800: '#ffd3c0', 900: '#ffe9df' }, 'coral': { DEFAULT: '#FE7547', 100: '#411000', 200: '#822101', 300: '#c33101', 400: '#fe4507', 500: '#fe7547', 600: '#fe916d', 700: '#fead91', 800: '#ffc8b6', 900: '#ffe4da' }, 'salmon_pink': { DEFAULT: '#FD8996', 100: '#4c010a', 200: '#990214', 300: '#e5031e', 400: '#fc3a51', 500: '#fd8996', 600: '#fe9faa', 700: '#feb7bf', 800: '#fecfd4', 900: '#ffe7ea' }, 'light_red': { DEFAULT: '#FF7B7C', 100: '#4b0000', 200: '#970000', 300: '#e20000', 400: '#ff2f2f', 500: '#ff7b7c', 600: '#ff9595', 700: '#ffafaf', 800: '#ffcaca', 900: '#ffe4e4' }, 'cyclamen': { DEFAULT: '#FF6692', 100: '#470014', 200: '#8f0028', 300: '#d6003d', 400: '#ff1f5e', 500: '#ff6692', 600: '#ff85a7', 700: '#ffa3bd', 800: '#ffc2d3', 900: '#ffe0e9' }, 'french_rose': { DEFAULT: '#FD4F82', 100: '#420114', 200: '#830128', 300: '#c5023c', 400: '#fd0d55', 500: '#fd4f82', 600: '#fe729c', 700: '#fe95b4', 800: '#feb8cd', 900: '#ffdce6' }, 'melon': { DEFAULT: '#FFC6BB', 100: '#590f00', 200: '#b11e00', 300: '#ff340b', 400: '#ff7e64', 500: '#ffc6bb', 600: '#ffd3ca', 700: '#ffded7', 800: '#ffe9e4', 900: '#fff4f2' } }
+
+- CSV
+
+FFAC4D,FE9903,FF9160,FE7547,FD8996,FF7B7C,FF6692,FD4F82,FFC6BB
+
+- With #
+
+#FFAC4D, #FE9903, #FF9160, #FE7547, #FD8996, #FF7B7C, #FF6692, #FD4F82, #FFC6BB
+
+- Array
+
+["FFAC4D","FE9903","FF9160","FE7547","FD8996","FF7B7C","FF6692","FD4F82","FFC6BB"]
+
+- Object
+
+{"Orange peel":"FFAC4D","Orange peel 2":"FE9903","Atomic tangerine":"FF9160","Coral":"FE7547","Salmon pink":"FD8996","Light red":"FF7B7C","Cyclamen":"FF6692","French rose":"FD4F82","Melon":"FFC6BB"}
+
+- Extended Array
+
+[{"name":"Orange peel","hex":"FFAC4D","rgb":[255,172,77],"cmyk":[0,33,70,0],"hsb":[32,70,100],"hsl":[32,100,65],"lab":[77,22,59]},{"name":"Orange peel","hex":"FE9903","rgb":[254,153,3],"cmyk":[0,40,99,0],"hsb":[36,99,100],"hsl":[36,99,50],"lab":[72,30,77]},{"name":"Atomic tangerine","hex":"FF9160","rgb":[255,145,96],"cmyk":[0,43,62,0],"hsb":[18,62,100],"hsl":[18,100,69],"lab":[71,37,44]},{"name":"Coral","hex":"FE7547","rgb":[254,117,71],"cmyk":[0,54,72,0],"hsb":[15,72,100],"hsl":[15,99,64],"lab":[65,49,50]},{"name":"Salmon pink","hex":"FD8996","rgb":[253,137,150],"cmyk":[0,46,41,1],"hsb":[353,46,99],"hsl":[353,97,76],"lab":[70,45,13]},{"name":"Light red","hex":"FF7B7C","rgb":[255,123,124],"cmyk":[0,52,51,0],"hsb":[360,52,100],"hsl":[360,100,74],"lab":[67,50,24]},{"name":"Cyclamen","hex":"FF6692","rgb":[255,102,146],"cmyk":[0,60,43,0],"hsb":[343,60,100],"hsl":[343,100,70],"lab":[64,62,7]},{"name":"French rose","hex":"FD4F82","rgb":[253,79,130],"cmyk":[0,69,49,1],"hsb":[342,69,99],"hsl":[342,98,65],"lab":[60,69,10]},{"name":"Melon","hex":"FFC6BB","rgb":[255,198,187],"cmyk":[0,22,27,0],"hsb":[10,27,100],"hsl":[10,100,87],"lab":[85,19,13]}]
+
+- XML
+
+<palette>
+  <color name="Orange peel" hex="FFAC4D" r="255" g="172" b="77" />
+  <color name="Orange peel" hex="FE9903" r="254" g="153" b="3" />
+  <color name="Atomic tangerine" hex="FF9160" r="255" g="145" b="96" />
+  <color name="Coral" hex="FE7547" r="254" g="117" b="71" />
+  <color name="Salmon pink" hex="FD8996" r="253" g="137" b="150" />
+  <color name="Light red" hex="FF7B7C" r="255" g="123" b="124" />
+  <color name="Cyclamen" hex="FF6692" r="255" g="102" b="146" />
+  <color name="French rose" hex="FD4F82" r="253" g="79" b="130" />
+  <color name="Melon" hex="FFC6BB" r="255" g="198" b="187" />
+</palette>
