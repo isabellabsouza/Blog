@@ -1,1 +1,1 @@
-<footer>Blog Natalia Bicudo</footer>
+<footer class="text-center mt-3">Blog Natalia Bicudo</footer>

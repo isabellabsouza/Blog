@@ -1,6 +1,8 @@
 <x-head.head title="{{ $title }}">
     <x-navbar />
-    {{ $slot }}
+
+        {{ $slot }}
+
 
     <x-footer />
 </x-head.head >

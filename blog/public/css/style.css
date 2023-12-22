@@ -1,0 +1,75 @@
+:root{
+    --text: 'Fira Code', monospace;
+
+    /* Colors */
+    --yellow: #FFAC4D;
+    --dark_yellow: #FE9903;
+    --orange: #FF9160;
+    --dark_orange: #FE7547;
+    --light_salmon: #FFC6BB;
+    --salmon: #FF7B7C;
+    --pink: #FF6692;
+    --dark_pink: #FD4F82;
+    --cream: #FFF5E8;
+}
+
+body {
+    font-family: var(--text);
+}
+
+.nav-color {
+    background-color: var(--cream) !important;
+    color: var(--dark_pink) !important;
+}
+
+.nav-text-color {
+    color: var(--orange) !important;
+}
+
+h3 {
+    color: var(--dark_pink);
+    font-weight: bold;
+}
+
+.img-card {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--cream);
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.btn-card {
+    background-color: var(--dark_pink);
+    color: var(--cream);;
+    border: none;
+}
+
+.btn-card a {
+    color: var(--cream) !important;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: var(--dark_pink) !important;
+}
+
+.login-link {
+    color: var(--dark_orange);
+    text-decoration: none;
+}
+
+.reset-text {
+    text-align: justify;
+}
+

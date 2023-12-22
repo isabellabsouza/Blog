@@ -8,6 +8,13 @@
 
     <x-head.bootstrap/>
     <x-head.tinymce-config/>
+    <x-head.google-fonts/>
+
+    <!-- CSS -->
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     <title>{{ $title }}</title>
 </head>
