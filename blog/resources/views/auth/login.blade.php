@@ -13,22 +13,22 @@
             @csrf
             <div class="row justify-content-center">
                 <div class="col col-md-3 col-12">
-                    <x-input-label class="" for="email" :value="__('Email')" />
+                    <x-forms.input-label class="" for="email" :value="__('Email')" />
                 </div>
                 <div class="col col-md-9 col-12">
-                    <x-text-input id="email" class="" type="email" name="email" :value="old('email')" required autofocus
+                    <x-forms.text-input id="email" class="" type="email" name="email" :value="old('email')" required autofocus
                         autocomplete="username" />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    <x-forms.input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <div class="col col-md-3 col-12">
-                    <x-input-label for="password" :value="__('Senha')" />
+                    <x-forms.input-label for="password" :value="__('Senha')" />
                 </div>
                 <div class="col col-md-3 col-12">
-                    <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                    <x-forms.text-input id="password" class="block mt-1 w-full" type="password" name="password" required
                         autocomplete="current-password" />
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    <x-forms.input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
@@ -43,7 +43,7 @@
             </div>
             <div class="row justify-content-center mt-3">
                 <div class="col col-12 col-md-5">
-                    <button class="btn btn-card rounded">Login</button>
+                    <button class="btn btn-pink rounded">Login</button>
                 </div>
                 <div class="col col-12 col-md-7 mt-3">
                     @if (Route::has('password.request'))

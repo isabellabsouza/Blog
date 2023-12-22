@@ -11,7 +11,7 @@
                         {{ $post->formattedDate }}
                     </small></p>
 
-                    <button class="btn btn-card">
+                    <button class="btn btn-pink">
                         <i class="bi bi-eyeglasses"></i> 
                         <a href="{{ route('posts.show', $post->id) }}" class="text-body-secondary">Ler </a>
                     </button>

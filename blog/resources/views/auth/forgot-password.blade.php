@@ -19,7 +19,7 @@
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
-            <button class="btn btn-card mt-3">Enviar email</button>
+            <button class="btn btn-pink mt-3">Enviar email</button>
         </form>
     </div>
 </x-standard>

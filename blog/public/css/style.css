@@ -26,7 +26,7 @@ body {
     color: var(--orange) !important;
 }
 
-h3 {
+h1, h3 {
     color: var(--dark_pink);
     font-weight: bold;
 }
@@ -47,18 +47,25 @@ footer {
     font-weight: bold;
 }
 
-.btn-card {
+.btn-pink {
     background-color: var(--dark_pink);
     color: var(--cream);;
     border: none;
 }
 
-.btn-card a {
+.btn-pink a {
     color: var(--cream) !important;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.btn-orange {
+    background-color: var(--dark_orange);
+    color: var(--cream);;
+    border: none;
+}
+
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     color: var(--dark_pink) !important;
@@ -73,3 +80,8 @@ footer {
     text-align: justify;
 }
 
+td a {
+    text-decoration: none;
+    color: var(--pink);
+    font-weight: bold;
+}
