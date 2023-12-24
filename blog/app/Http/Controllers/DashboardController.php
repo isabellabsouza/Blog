@@ -12,7 +12,7 @@ class DashboardController extends Controller
     }
     public function posts()
     {
-        $posts = $this->repository->findAll();
+        $posts = $this->repository->findAllByUserId(auth()->id());
         return view('dashboard.posts')->with('posts', $posts);
         
     }

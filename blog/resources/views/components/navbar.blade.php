@@ -47,7 +47,7 @@
                                       <a class="nav-link nav-text-color" href="{{ route('logout') }}"
                                           onclick="event.preventDefault();
                                                   this.closest('form').submit();">
-                                          <i class="bi bi-box-arrow-left"></i> {{ __('Logout') }}
+                                          <i class="bi bi-box-arrow-left"></i> {{ __('Sair') }}
                                       </a>
                                   </form>
                               </li>

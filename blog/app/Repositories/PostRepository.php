@@ -29,6 +29,11 @@ class PostRepository
         return Post::findOrFail($id);
     }
 
+    public function findAllByUserId($id)
+    {
+        return Post::where('user_id', $id)->get();
+    }
+
     public function update(Request $request, $id)
     {
         $post = $this->findById($id);
