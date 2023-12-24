@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class PostController extends Controller
 {
-    
-    public function __construct(private PostRepository $repository){}
+
+    public function __construct(private PostRepository $repository)
+    {
+    }
 
     public function index()
     {
         $posts = $this->repository->findAll();
+        foreach($posts as $post){
+            $post->formattedDate = Carbon::parse($post->created_at)->format('d/m/Y');
+        }
         return view('posts.index')->with('posts', $posts);
     }
 
@@ -31,7 +37,9 @@ class PostController extends Controller
     public function show($id)
     {
         $post = $this->repository->findById($id);
-        return view('posts.show')->with('post', $post);
+        $post->formattedDate = Carbon::parse($post->created_at)->format('d/m/Y');
+
+        return view('posts.show')->with(['post' => $post]);
     }
 
     public function edit($id)
@@ -44,7 +52,6 @@ class PostController extends Controller
     {
         $this->repository->update($request, $id);
         return to_route('posts.index');
-
     }
 
     public function destroy($id)

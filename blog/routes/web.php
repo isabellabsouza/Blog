@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
@@ -25,7 +26,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-
+    Route::get('/dashboard', [DashboardController::class, 'posts'])->name('dashboard.posts');
     Route::resource('posts', PostController::class);
     // Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
     // Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');

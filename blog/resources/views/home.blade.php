@@ -12,18 +12,19 @@
                 <div class="carousel-inner">
                     @foreach ($posts as $key => $post)
                         <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                            <x-card-post :post="$post" />
+                            <x-cards.default :post="$post" />
                         </div>
                     @endforeach
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselPosts"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="bi bi-chevron-compact-left icon-carousel fs-4" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselPosts"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="bi bi-chevron-compact-right icon-carousel fs-4" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
