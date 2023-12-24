@@ -13,7 +13,7 @@
                 <li class="nav-item">
                     <a class="nav-link nav-text-color" href="{{ route('posts.index') }}">Posts</a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-text-color" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Categorias
@@ -26,31 +26,40 @@
                         </li>
                         <li><a class="dropdown-item nav-text-color" href="#">Something else here</a></li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
             <ul class="navbar-nav">
-                <li class="nav-item">
                     @if (Route::has('login'))
                         @auth
-                    <li class="nav-item">
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <a class="nav-link nav-text-color" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                                {{ __('Logout') }}
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle nav-text-color" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ Auth::user()->name }}
                             </a>
-                        </form>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('dashboard.posts') }}" class="nav-link nav-text-color">Painel</a>
-                    </li>
-                @else
-                    <li class="nav-item">
-                        <a class="nav-link nav-text-color" href="{{ url('login') }}">Login</a>
-                    </li>
-                @endauth
-                @endif
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li class="nav-item">
+                                    <a href="{{ route('dashboard.posts') }}" class="nav-link nav-text-color">
+                                        <i class="bi bi-speedometer2"></i> Painel</a>
+                                </li>
+                              <li class="nav-item">
+                                  <form method="POST" action="{{ route('logout') }}">
+                                      @csrf
+                                      
+                                      <a class="nav-link nav-text-color" href="{{ route('logout') }}"
+                                          onclick="event.preventDefault();
+                                                  this.closest('form').submit();">
+                                          <i class="bi bi-box-arrow-left"></i> {{ __('Logout') }}
+                                      </a>
+                                  </form>
+                              </li>
+                              
+                            </ul>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link nav-text-color" href="{{ url('login') }}">Login</a>
+                        </li>
+                        @endauth
+                    @endif
 
             </ul>
         </div>
