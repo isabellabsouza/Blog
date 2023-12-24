@@ -6,7 +6,7 @@
 
     <div class="container mt-3">
         <div>
-            <h3 class="text-center">Destaques..</h3>
+            <h3 class="text-center">Destaques</h3>
 
             <div id="carouselPosts" class="carousel slide mt-3">
                 <div class="carousel-inner">
