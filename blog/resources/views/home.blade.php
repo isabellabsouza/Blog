@@ -1,6 +1,6 @@
 <x-standard title="Home">
 
-    <div class="banner">
+    <div>
         <img class="img-fluid" src="assets/banner.png">
     </div>
 
@@ -35,7 +35,7 @@
                 <div class="col-md-6">
                     <img class="img-fluid" src="assets/avatar-flower.png">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 align-self-center">
                     <p class="text-center mt-3">
                         Oi gente, nesse bolg eu vou falar um pouco de mim, sobre minha opinião, e claro, fofocas.
                         <br/>
