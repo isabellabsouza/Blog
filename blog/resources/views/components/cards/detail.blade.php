@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="col col-12 mt-2">
-                    <button class="btn btn-pink">
+                    <button class="btn btn-pink" onclick="location.href='{{ route('posts.show', $post->id)}}'">
                         <i class="bi bi-eyeglasses"></i>
                         <a href="{{ route('posts.show', $post->id) }}" class="text-body-secondary">Ler </a>
                     </button>
