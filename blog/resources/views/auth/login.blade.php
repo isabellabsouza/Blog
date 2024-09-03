@@ -25,7 +25,7 @@
                 <div class="col col-md-3 col-12">
                     <x-forms.input-label for="password" :value="__('Senha')" />
                 </div>
-                <div class="col col-md-3 col-12">
+                <div class="col col-md-9 col-12">
                     <x-forms.text-input id="password" class="block mt-1 w-full" type="password" name="password" required
                         autocomplete="current-password" />
                     <x-forms.input-error :messages="$errors->get('password')" class="mt-2" />
