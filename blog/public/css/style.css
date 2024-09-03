@@ -69,6 +69,12 @@ footer {
     border: none;
 }
 
+.btn-pink:hover {
+    background-color: var(--pink);
+    color: var(--cream);;
+    border: none;
+}
+
 .btn .btn-pink .active {
     background-color: red;
     color: var(--cream);;
